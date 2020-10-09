@@ -18,9 +18,13 @@ views:
 
 
     cards:
-      - entity: media_player.living_room_apple_tv
-        type: media-control
+      - type: weather-forecast
+        entity: weather.home
+      # - entity: media_player.living_room_apple_tv
+      #   type: media-control
       - cards:
+          - entity: media_player.living_room_apple_tv
+            type: media-control
           - cards:
               - entity: remote.living_room_apple_tv
                 hold_action:
