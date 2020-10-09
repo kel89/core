@@ -1,0 +1,68 @@
+
+- id: '1588893016815'
+  alias: menu klik
+  description: ''
+  trigger: []
+  condition: []
+  action:
+  - data:
+      command: menu
+      entity_id: remote.c
+    entity_id: remote.apple_tv
+    service: remote.send_command
+- id: '1588893454390'
+  alias: left klik
+  description: ''
+  trigger: []
+  condition: []
+  action:
+  - data:
+      command: left
+      entity_id: remote.apple_tv
+    entity_id: remote.apple_tv
+    service: remote.send_command
+- id: '1588893677501'
+  alias: right.click
+  description: ''
+  trigger: []
+  condition: []
+  action:
+  - data:
+      command: right
+      entity_id: remote.apple_tv
+    entity_id: remote.apple_tv
+    service: remote.send_command
+- id: '1588894393629'
+  alias: up.click
+  description: ''
+  trigger: []
+  condition: []
+  action:
+  - data:
+      command: up
+      entity_id: remote.apple_tv
+    entity_id: remote.apple_tv
+    service: remote.send_command
+- id: '1588894418468'
+  alias: down.click
+  description: ''
+  trigger: []
+  condition: []
+  action:
+  - data:
+      command: down
+      entity_id: remote.apple_tv
+    entity_id: remote.apple_tv
+    service: remote.send_command
+- id: '1588896133904'
+  alias: enter.click
+  description: ''
+  trigger: []
+  condition: []
+  action:
+  - data:
+      command: select
+      entity_id: remote.apple_tv
+    entity_id: remote.apple_tv
+    service: remote.send_command
+
