@@ -1,0 +1,14 @@
+{
+    "version": 2,
+    "key": "person",
+    "data": {
+        "items": [
+            {
+                "name": "Ken Lipke",
+                "user_id": "371555a591344dffb8146861e615fa73",
+                "device_trackers": [],
+                "id": "ken_lipke"
+            }
+        ]
+    }
+}

@@ -16,13 +16,8 @@ views:
       - type: weather-forecast
         entity: weather.home
 
-# Custom Apple TV buttons
-      - entity: media_player.living_room_apple_tv
-        type: media-control
-      - entities:
-          - media_player.living_room_apple_tv
-        show_header_toggle: false
-        type: entities
+
+    cards:
       - entity: media_player.living_room_apple_tv
         type: media-control
       - cards:
@@ -31,40 +26,43 @@ views:
                 hold_action:
                   action: none
                 icon: 'mdi:arrow-left'
-                name: Left knop
+                name: Left arrow
                 show_icon: true
                 show_name: false
                 tap_action:
                   action: call-service
-                  service: automation.trigger
+                  service: remote.send_command
                   service_data:
-                    entity_id: automation.left_click
+                    command: left
+                    entity_id: remote.living_room_apple_tv
                 type: button
               - entity: remote.living_room_apple_tv
                 hold_action:
                   action: none
                 icon: 'mdi:apple'
-                name: Enter klik
+                name: Select
                 show_icon: true
                 show_name: false
                 tap_action:
                   action: call-service
-                  service: automation.trigger
+                  service: remote.send_command
                   service_data:
-                    entity_id: automation.enter_click
+                    command: select
+                    entity_id: remote.living_room_apple_tv
                 type: button
               - entity: remote.living_room_apple_tv
                 hold_action:
                   action: none
                 icon: 'mdi:arrow-right'
-                name: Right klik
+                name: Right arrow
                 show_icon: true
                 show_name: false
                 tap_action:
                   action: call-service
-                  service: automation.trigger
+                  service: remote.send_command
                   service_data:
-                    entity_id: automation.right_click
+                    command: right
+                    entity_id: remote.living_room_apple_tv
                 type: button
             type: horizontal-stack
           - cards:
@@ -72,40 +70,137 @@ views:
                 hold_action:
                   action: none
                 icon: 'mdi:arrow-up'
-                name: up knop
+                name: Up arrow
                 show_icon: true
                 show_name: false
                 tap_action:
                   action: call-service
-                  service: automation.trigger
+                  service: remote.send_command
                   service_data:
-                    entity_id: automation.up_click
+                    command: up
+                    entity_id: remote.living_room_apple_tv
                 type: button
               - entity: remote.living_room_apple_tv
                 hold_action:
                   action: none
                 icon: 'mdi:menu'
-                name: Menu knop
+                name: Menu
                 show_icon: true
                 show_name: false
                 tap_action:
                   action: call-service
-                  service: automation.trigger
+                  service: remote.send_command
                   service_data:
-                    entity_id: automation.menu_click
+                    command: menu
+                    entity_id: remote.living_room_apple_tv
                 type: button
-              - entity: remote.kamer_bas
+              - entity: remote.living_room_apple_tv
                 hold_action:
                   action: none
                 icon: 'mdi:arrow-down'
-                name: down knop
+                name: Down arrow
                 show_icon: true
                 show_name: false
                 tap_action:
                   action: call-service
-                  service: automation.trigger
+                  service: remote.send_command
                   service_data:
-                    entity_id: automation.down_click
+                    command: down
+                    entity_id: remote.living_room_apple_tv
                 type: button
             type: horizontal-stack
         type: vertical-stack
+#
+# # Custom Apple TV buttons
+#       - entity: media_player.living_room_apple_tv
+#         type: media-control
+#       - entities:
+#           - media_player.living_room_apple_tv
+#         show_header_toggle: false
+#         type: entities
+#       - entity: media_player.living_room_apple_tv
+#         type: media-control
+#       - cards:
+#           - cards:
+#               - entity: remote.living_room_apple_tv
+#                 hold_action:
+#                   action: none
+#                 icon: 'mdi:arrow-left'
+#                 name: Left knop
+#                 show_icon: true
+#                 show_name: false
+#                 tap_action:
+#                   action: call-service
+#                   service: automation.trigger
+#                   service_data:
+#                     entity_id: automation.left_click
+#                 type: button
+#               - entity: remote.living_room_apple_tv
+#                 hold_action:
+#                   action: none
+#                 icon: 'mdi:apple'
+#                 name: Enter klik
+#                 show_icon: true
+#                 show_name: false
+#                 tap_action:
+#                   action: call-service
+#                   service: automation.trigger
+#                   service_data:
+#                     entity_id: automation.enter_click
+#                 type: button
+#               - entity: remote.living_room_apple_tv
+#                 hold_action:
+#                   action: none
+#                 icon: 'mdi:arrow-right'
+#                 name: Right klik
+#                 show_icon: true
+#                 show_name: false
+#                 tap_action:
+#                   action: call-service
+#                   service: automation.trigger
+#                   service_data:
+#                     entity_id: automation.right_click
+#                 type: button
+#             type: horizontal-stack
+#           - cards:
+#               - entity: remote.living_room_apple_tv
+#                 hold_action:
+#                   action: none
+#                 icon: 'mdi:arrow-up'
+#                 name: up knop
+#                 show_icon: true
+#                 show_name: false
+#                 tap_action:
+#                   action: call-service
+#                   service: automation.trigger
+#                   service_data:
+#                     entity_id: automation.up_click
+#                 type: button
+#               - entity: remote.living_room_apple_tv
+#                 hold_action:
+#                   action: none
+#                 icon: 'mdi:menu'
+#                 name: Menu knop
+#                 show_icon: true
+#                 show_name: false
+#                 tap_action:
+#                   action: call-service
+#                   service: automation.trigger
+#                   service_data:
+#                     entity_id: automation.menu_click
+#                 type: button
+#               - entity: remote.living_room_apple_tv
+#                 hold_action:
+#                   action: none
+#                 icon: 'mdi:arrow-down'
+#                 name: down knop
+#                 show_icon: true
+#                 show_name: false
+#                 tap_action:
+#                   action: call-service
+#                   service: automation.trigger
+#                   service_data:
+#                     entity_id: automation.down_click
+#                 type: button
+#             type: horizontal-stack
+#         type: vertical-stack

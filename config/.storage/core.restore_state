@@ -1,0 +1,216 @@
+{
+    "version": 1,
+    "key": "core.restore_state",
+    "data": [
+        {
+            "state": {
+                "entity_id": "person.ken_lipke",
+                "state": "unknown",
+                "attributes": {
+                    "editable": true,
+                    "id": "ken_lipke",
+                    "source": "person.ken_lipke",
+                    "user_id": "371555a591344dffb8146861e615fa73",
+                    "friendly_name": "Ken Lipke"
+                },
+                "last_changed": "2020-10-09T23:07:18.614194+00:00",
+                "last_updated": "2020-10-09T23:07:18.614194+00:00",
+                "context": {
+                    "id": "196015c276e41d9773d04aeaf18cf093",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-10-09T23:07:19.528599+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.menu_click_2",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "id": "atvmenu",
+                    "friendly_name": "menu_click"
+                },
+                "last_changed": "2020-10-09T23:07:18.784136+00:00",
+                "last_updated": "2020-10-09T23:07:18.784136+00:00",
+                "context": {
+                    "id": "315ef968991d97e5b842d9160e054fa7",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-10-09T23:07:19.528599+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.left_click",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-10-09T23:06:44.665780+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "newcustom",
+                    "friendly_name": "left.click"
+                },
+                "last_changed": "2020-10-09T23:07:18.784297+00:00",
+                "last_updated": "2020-10-09T23:07:18.784297+00:00",
+                "context": {
+                    "id": "8ad0e66306327512cade29d21cdad53d",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-10-09T23:07:19.528599+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.right_click",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-10-09T23:06:43.122168+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1588893677501",
+                    "friendly_name": "right.click"
+                },
+                "last_changed": "2020-10-09T23:07:18.784460+00:00",
+                "last_updated": "2020-10-09T23:07:18.784460+00:00",
+                "context": {
+                    "id": "95fed3d81ba9afce4d2e13a7c7108b20",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-10-09T23:07:19.528599+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.up_click",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-10-09T23:04:04.380404+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1588894393629",
+                    "friendly_name": "up.click"
+                },
+                "last_changed": "2020-10-09T23:07:18.784629+00:00",
+                "last_updated": "2020-10-09T23:07:18.784629+00:00",
+                "context": {
+                    "id": "62eb35f6d989fac7824bcd6dcb177c05",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-10-09T23:07:19.528599+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.down_click",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-10-09T23:04:03.443083+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1588894418468",
+                    "friendly_name": "down.click"
+                },
+                "last_changed": "2020-10-09T23:07:18.784748+00:00",
+                "last_updated": "2020-10-09T23:07:18.784748+00:00",
+                "context": {
+                    "id": "bb9b802e50617dd73c24532947f5d641",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-10-09T23:07:19.528599+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.enter_click",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-10-09T23:04:10.201036+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1588896133904",
+                    "friendly_name": "enter.click"
+                },
+                "last_changed": "2020-10-09T23:07:18.784862+00:00",
+                "last_updated": "2020-10-09T23:07:18.784862+00:00",
+                "context": {
+                    "id": "cbfedfaabdde5b56e6d595c243786415",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-10-09T23:07:19.528599+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.menu_click",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": "2020-10-09T23:04:12.821048+00:00",
+                    "mode": "single",
+                    "current": 0,
+                    "id": "anothernewid",
+                    "friendly_name": "menu_click"
+                },
+                "last_changed": "2020-10-09T23:03:51.893897+00:00",
+                "last_updated": "2020-10-09T23:04:12.825999+00:00",
+                "context": {
+                    "id": "377479802597f976c1b7dc7434aeed77",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-10-09T23:06:32.819288+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.menu_klik",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1588893016815",
+                    "friendly_name": "menu.click"
+                },
+                "last_changed": "2020-10-09T22:59:00.676320+00:00",
+                "last_updated": "2020-10-09T22:59:00.676320+00:00",
+                "context": {
+                    "id": "3b1ec916ce21f29bc4c7960c0f15dbb8",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-10-09T23:00:38.903268+00:00"
+        },
+        {
+            "state": {
+                "entity_id": "automation.left_klik",
+                "state": "on",
+                "attributes": {
+                    "last_triggered": null,
+                    "mode": "single",
+                    "current": 0,
+                    "id": "1588893454390",
+                    "friendly_name": "left.click"
+                },
+                "last_changed": "2020-10-09T22:55:20.064317+00:00",
+                "last_updated": "2020-10-09T22:55:20.064317+00:00",
+                "context": {
+                    "id": "25b61ee3623cfe76ae1afad3c2ebeb32",
+                    "parent_id": null,
+                    "user_id": null
+                }
+            },
+            "last_seen": "2020-10-09T22:57:55.795824+00:00"
+        }
+    ]
+}

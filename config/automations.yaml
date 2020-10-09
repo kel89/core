@@ -1,25 +1,49 @@
+#
+# - id: '1588893016815'
+#   alias: menu.click
+#   description: ''
+#   trigger: []
+#   condition: []
+#   action:
+#   - data:
+#       command: menu
+#       entity_id: remote.living_room_apple_tv
+#     entity_id: remote.living_room_apple_tv
+#     service: remote.send_command
 
-- id: '1588893016815'
-  alias: menu klik
+- id: 'atvmenu'
+  alias: menu.click
   description: ''
   trigger: []
   condition: []
   action:
   - data:
-      command: menu
-      entity_id: remote.c
-    entity_id: remote.apple_tv
+      command: memu
+      entity_id: remote.living_room_apple_tv
+    entity_id: remote.living_room_apple_tv
     service: remote.send_command
-- id: '1588893454390'
-  alias: left klik
+
+# - id: '1588893454390'
+#   alias: left.click
+#   description: ''
+#   trigger: []
+#   condition: []
+#   action:
+#   - data:
+#       command: left
+#       entity_id: remote.living_room_apple_tv
+#     entity_id: remote.living_room_apple_tv
+#     service: remote.send_command
+- id: 'newcustom'
+  alias: left.click
   description: ''
   trigger: []
   condition: []
   action:
   - data:
       command: left
-      entity_id: remote.apple_tv
-    entity_id: remote.apple_tv
+      entity_id: remote.living_room_apple_tv
+    entity_id: remote.living_room_apple_tv
     service: remote.send_command
 - id: '1588893677501'
   alias: right.click
@@ -29,8 +53,8 @@
   action:
   - data:
       command: right
-      entity_id: remote.apple_tv
-    entity_id: remote.apple_tv
+      entity_id: remote.living_room_apple_tv
+    entity_id: remote.living_room_apple_tv
     service: remote.send_command
 - id: '1588894393629'
   alias: up.click
@@ -40,8 +64,8 @@
   action:
   - data:
       command: up
-      entity_id: remote.apple_tv
-    entity_id: remote.apple_tv
+      entity_id: remote.living_room_apple_tv
+    entity_id: remote.living_room_apple_tv
     service: remote.send_command
 - id: '1588894418468'
   alias: down.click
@@ -51,8 +75,8 @@
   action:
   - data:
       command: down
-      entity_id: remote.apple_tv
-    entity_id: remote.apple_tv
+      entity_id: remote.living_room_apple_tv
+    entity_id: remote.living_room_apple_tv
     service: remote.send_command
 - id: '1588896133904'
   alias: enter.click
@@ -62,7 +86,6 @@
   action:
   - data:
       command: select
-      entity_id: remote.apple_tv
-    entity_id: remote.apple_tv
+      entity_id: remote.living_room_apple_tv
+    entity_id: remote.living_room_apple_tv
     service: remote.send_command
-

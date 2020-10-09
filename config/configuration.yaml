@@ -24,5 +24,3 @@ apple_tv:
   - host: 192.168.0.110
     login_id: 00000000-23c1-42f6-cea9-6f5d85794681
     name: LIVING_ROOM_APPLE_TV
-    
-
